@@ -130,6 +130,7 @@ form #btn-form button {
     height: 40px;
     border-radius: 20px;
     border:none;
+    cursor: pointer;
 }
 form #btn-form #btn-hitung{
     margin-right: 5px;
@@ -167,6 +168,8 @@ section #btn-download button{
     margin-top: 20px;
     border-radius: 20px;
     border:none;
+    cursor: pointer;
+
 }
 
 #colum-parag-end #HasilAntara{
@@ -184,6 +187,8 @@ section #btn-download button{
     height: 40px;
     border-radius: 20px;
     border:none;
+    cursor: pointer;
+
 }
 #btn-konsul-reg #btn-konsul{
     margin-right: 10px;
@@ -211,12 +216,16 @@ section #btn-download button{
     border-radius: 20px;
     border:none;
     margin: 10px 0;
+    cursor: pointer;
+
 }
 #btn-konsul-reg2 #btn-reg2{
     width: 50%;
     height: 40px;
     border-radius: 20px;
     border:none;
+    cursor: pointer;
+
 }
 /* ======================================== */
 

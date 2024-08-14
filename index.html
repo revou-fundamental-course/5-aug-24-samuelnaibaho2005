@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Kalkulator BMI</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <!-- TITLE -->
@@ -30,19 +31,19 @@
                 </div>
                 <div id="BB"> <!--Berat Badan-->
                     <h4>Berat badan </h4>
-                    <img src="assets/pen.png" alt="" class="icon-pen"></i><input type="number" placeholder="Kilogram(Kg)">
+                    <img src="assets/pen.png" alt="" class="icon-pen"></i><input id="BeratBadan" type="number" placeholder="Kilogram(Kg)">
                 </div>
                 <div id="usia"> <!--Usia-->
                     <h4>Usia</h4>
-                    <img src="assets/pen.png" alt="" class="icon-pen"><input type="number" placeholder="Tahun">
+                    <img src="assets/pen.png" alt="" class="icon-pen"><input id="Usia" type="number" placeholder="Tahun">
                 </div>
                 <div id="TB"> <!--Tinggi Badan-->
                     <h4>Tinggi badan </h4>
-                    <img src="assets/pen.png" alt="" class="icon-pen"><input type="number" placeholder="Centimeter(Cm)">
+                    <img src="assets/pen.png" alt="" class="icon-pen"><input id="TinggiBadan" type="number" placeholder="Centimeter(Cm)">
                 </div>
                 <div id="btn-form">
-                    <button id="btn-hitung" type="button">Hitung BMI</button>
-                    <button id="btn-reset" type="reset">Reset</button>
+                    <button id="btn-hitung" type="button" onclick="calculateBMI()">Hitung BMI</button>
+                    <button id="btn-reset" type="reset" onclick="resetform()">Reset</button>
                 </div>
             </form>
             <!-- //FORM// -->
@@ -78,9 +79,9 @@
                 </header>
                 <section id="colum-hasil">
                     <div>
-                        <p>Berat badan anda</p>
-                        <h2>30.5</h2>
-                        <p>Anda memiliki berat badan berlebih</p>
+                        <p>Hasil perhitungan anda</p>
+                        <h2 id="hasilnumber">00.0</h2>
+                        <p id="hasiltext1">-</p>
                     </div>
                     <div id="btn-download">
                         <button type="button">Dowload Hasil BMI</button>
@@ -88,7 +89,7 @@
                 </section>
                 <section id="colum-parag-end">
                     <div>
-                        <p id="HasilAntara">Hasil BMI diantara 23 dan 25</p>
+                        <p id="HasilAntara">Hasil BMI diantara - dan -</p>
                         <p>Anda berada dalam kategori overweight atau berat badan berlebih.
                             Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang
                             dikonsumsi dan berolahraga.
