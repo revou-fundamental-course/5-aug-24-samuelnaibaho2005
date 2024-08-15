@@ -9,7 +9,7 @@
 body{
     margin: 20px 40px;
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-color: white;
+    color: white;
 }
 main{
     display: flex;
@@ -232,4 +232,39 @@ section #btn-download button{
 footer{
     text-align: center;
     margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 400px) {
+    body{
+        margin: 20px 20px;
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        color: white;
+        width: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    #side-left{
+        margin-right: 25px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(21, 0, 67, 0.5);
+    }
+    #side-right{
+        padding: 20px;
+        border-radius: 10px;
+        margin-right: 25px;
+        text-align: justify;
+        background-color: rgba(21, 0, 67, 0.5);
+    }
+    #colum-parag-end #btn-konsul-reg button{
+        padding: 0 20px;
+    }
+    #colum-parag-simpulan #btn-konsul-reg2 #btn-konsul2{
+        padding: 0 20px;
+    }
+
 }

@@ -15,11 +15,11 @@ function calculateBMI(){
     let HasilText1 = ``
     document.getElementById("hasilnumber").innerText = bmi.toFixed(1);
 
-    if(bmi < 18.5){
+    if(bmi <= 18.5){
         HasilText1 += "Maaf, anda kekurangan berat badan."
-    } else if(bmi >= 18.5 || bmi <= 24.9){
+    } else if(bmi > 18.5 && bmi <= 24.9){
         HasilText1 += "Waooww, badan kamu sangat ideal."
-    } else if(bmi >= 25.0 || bmi <= 29.9){
+    } else if(bmi > 24.9 && bmi <= 29.9){
         HasilText1 += "Eh, berat badan kamu kelebihan deh..."
     } else if(bmi >= 30.0) {
         HasilText1 += "waduhhh, kamu sudah sengat kegemukan atau obesitas."
